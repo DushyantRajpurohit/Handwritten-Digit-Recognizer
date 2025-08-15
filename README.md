@@ -14,6 +14,7 @@ A complete pipeline for training, evaluating, and deploying a Convolutional Neur
 * [Requirements](#requirements)
 * [Example Results](#-example-results)
 * [Future Scope](#-future-scope)
+* [Insights & Real-World Applications](#-insights-&-real-world-applications)
 * [License](#-license)
 
 ---
@@ -162,6 +163,27 @@ streamlit-drawable-canvas>=0.8.0
 | Input Digit | Prediction | Confidence |
 | ----------- | ---------- | ---------- |
 | 5       | 5          | 0.998      |
+
+---
+
+# Insights & Real-World Applications**
+
+* **Model Performance**
+  * The CNN achieved a test accuracy of 99.30%, which is excellent for the MNIST dataset.
+  * The confusion matrix shows the model performs very well across all digits, with minimal misclassifications. Most errors occur between visually similar digits like 4 & 9 or 3 & 5.
+
+* **Practical Applications**
+  * Banking & Finance-Automating cheque processing by recognizing handwritten amounts.
+  * Postal Services-Reading handwritten postal codes for mail sorting.
+  * Education-Digitizing handwritten exam papers for automatic grading systems.
+  * Accessibility-Helping visually impaired users interact with handwritten content via OCR.
+
+* **Key Takeaways**
+  * Data Augmentation (rotation, shift, zoom) improved generalization and reduced overfitting.
+  * Batch Normalization stabilized training, leading to faster convergence.
+  * Dropout Layers reduced overfitting by forcing the network to learn robust features.
+  * The modular project structure (separate scripts for data loading, training, and evaluation) ensures maintainability and scalability.
+  * The trained CNN model was successfully integrated into a Streamlit application, enabling users to draw digits on a canvas and instantly see predictions.
 
 ---
 
