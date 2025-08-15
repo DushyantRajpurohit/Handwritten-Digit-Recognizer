@@ -166,10 +166,11 @@ streamlit-drawable-canvas>=0.8.0
 ---
 
 ## Future Scope:
+
 * Extend to alphanumeric character recognition.
 * Integrate with mobile or web applications for real-world usage.
 * Experiment with more advanced architectures for even higher accuracy.
-* 
+
 ---
 
 ##  License
