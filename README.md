@@ -166,7 +166,7 @@ streamlit-drawable-canvas>=0.8.0
 
 ---
 
-# Insights & Real-World Applications**
+# Insights & Real-World Applications
 
 * **Model Performance**
   * The CNN achieved a test accuracy of 99.30%, which is excellent for the MNIST dataset.
