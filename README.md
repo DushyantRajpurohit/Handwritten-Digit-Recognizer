@@ -10,10 +10,10 @@ handwritten-digit-recognizer/
 │
 ├── data/
 │   ├── raw/                # Original unprocessed data (e.g., MNIST raw files or CSVs)
-│   ├── processed/          # Preprocessed datasets (train/test split)
+│   └── processed/          # Preprocessed datasets (train/test split)
 │
 ├── notebooks/
-│   ├── Handwritten_Digit_Recognizer.ipynb
+│   └── Handwritten_Digit_Recognizer.ipynb
 │
 ├── src/
 │   ├── config.py           # Configurations (paths, hyperparameters, constants)
@@ -21,24 +21,27 @@ handwritten-digit-recognizer/
 │   ├── model.py            # Model architecture definition (CNN, etc.)
 │   ├── train.py            # Training loop
 │   ├── evaluate.py         # Model evaluation
-│   ├── predict.py          # Prediction function for single/multiple images
+│   ├── predict.py          # Prediction function for single image
 │   └── utils.py            # Helper functions (plotting, metrics, etc.)
 │
 ├── app/
-│   ├── app.py    # Streamlit interface
+│   └── app.py    # Streamlit interface
 │   
 ├── models/
-│   ├── best_model.h5       # Saved trained model
-│   └── model_history.json  # Training history for plotting
+│   └── best_model.h5       # Saved trained model
 │
 ├── artifacts/
-│   ├── 
-│   ├── test_model.py
-│   └── test_predict.py
+│   ├── augmented_sample.png
+│   ├── class_distribution.png
+│   ├── confusion_matrix.png
+│   ├── history.json
+│   ├── misclassified_example.png
+│   ├── prediction_result.png
+│   ├── sample_images.png
+│   └── training_history.png
 │
 ├── requirements.txt        # All dependencies (TensorFlow, NumPy, etc.)
 ├── README.md               # Project overview, usage, and results
-├── .gitignore
 └── LICENSE
 
 
