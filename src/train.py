@@ -84,6 +84,7 @@ def train_model():
   evaluate_model()
   
   # Prediction on a test image
+  print('Prediction on a test image:')
   predict_single_image()
 
 if __name__ == '__main__':
