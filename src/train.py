@@ -15,6 +15,7 @@ from data_loader import load_processed_data
 from model import build_cnn_model
 from utils import save_history, plot_history, plot_confusion_matrix, plot_history_from_file
 from evaluate import evaluate_model
+from predict import predict_single_image
 
 # Ensure dirs exist
 MODEL_DIR.mkdir(parents=True, exist_ok=True)
@@ -81,6 +82,9 @@ def train_model():
 
   # Evaluating the model on test dataset
   evaluate_model()
+  
+  # Prediction on a test image
+  predict_single_image()
 
 if __name__ == '__main__':
   train_model()
