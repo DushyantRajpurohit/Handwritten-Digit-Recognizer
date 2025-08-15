@@ -30,7 +30,7 @@ def predict_single_image():
 
     # Plot the image
     plt.imshow(image.squeeze(), cmap='gray')
-    plt.title(f"True: {class_names[true_label]}, Pred: {class_names[pred_label]}")
+    plt.title(f"True: {class_names[true_label]}, Predicted: {class_names[pred_label]}")
     plt.axis('off')
     save_path=ARTIFACTS_DIR/'prediction_result.png'
     plt.savefig(save_path, dpi=300)
