@@ -85,7 +85,7 @@ handwritten-digit-recognizer/
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ```bash
 # 1) Clone
@@ -104,7 +104,7 @@ pip install -r requirements.txt
 ```
 ---
 
-## 📊 Training
+## Training
 
 ```bash
 python -m src.train
@@ -123,7 +123,7 @@ This will:
 
 ---
 
-## 🌐 Streamlit App
+## Streamlit App
 
 ```bash
 streamlit run app/app.py
@@ -152,7 +152,7 @@ streamlit-drawable-canvas>=0.8.0
 
 ---
 
-## 📈 Example Results
+## Example Results
 
 * Test Accuracy: \~**99%** (depends on hyperparameters)
 * Confusion Matrix: shows strong diagonals with sparse off‑diagonals
@@ -160,7 +160,7 @@ streamlit-drawable-canvas>=0.8.0
 
 | Input Digit | Prediction | Confidence |
 | ----------- | ---------- | ---------- |
-| 🖌️ 5       | 5          | 0.998      |
+| 5       | 5          | 0.998      |
 
 ---
 
