@@ -1,30 +1,51 @@
-# 🖊️ Handwritten Digit Recognizer
+# Handwritten Digit Recognizer
 
 A complete pipeline for training, evaluating, and deploying a Convolutional Neural Network (CNN) to recognize handwritten digits from the MNIST dataset.  
 Includes a **Streamlit** web app with a drawing canvas and image upload support for real-time digit prediction.
 
 ---
 
-## 📂 Project Structure
-
-.
-├── app.py # Streamlit web app for digit prediction
-├── config.py # Centralized configuration & directory setup
-├── data_loader.py # MNIST dataset download, preprocessing, saving/loading
-├── evaluate.py # Model evaluation on test data
-├── model.py # CNN model architecture
-├── train.py # Training pipeline with augmentation & callbacks
-├── utils.py # Utility functions (plots, metrics, history saving)
+## Project Structure
+handwritten-digit-recognizer/
+│
 ├── data/
-│ ├── raw/ # Raw dataset (.npy files)
-│ ├── processed/ # Processed dataset (.npy files)
-├── models/ # Saved trained models (best_model.h5)
-├── artifacts/ # Plots, metrics reports, training history
+│   ├── raw/                # Original unprocessed data (e.g., MNIST raw files or CSVs)
+│   ├── processed/          # Preprocessed datasets (train/test split)
+│
+├── notebooks/
+│   ├── Handwritten_Digit_Recognizer.ipynb
+│
+├── src/
+│   ├── config.py           # Configurations (paths, hyperparameters, constants)
+│   ├── data_loader.py      # Functions to load and preprocess data
+│   ├── model.py            # Model architecture definition (CNN, etc.)
+│   ├── train.py            # Training loop
+│   ├── evaluate.py         # Model evaluation
+│   ├── predict.py          # Prediction function for single/multiple images
+│   └── utils.py            # Helper functions (plotting, metrics, etc.)
+│
+├── app/
+│   ├── app.py    # Streamlit interface
+│   
+├── models/
+│   ├── best_model.h5       # Saved trained model
+│   └── model_history.json  # Training history for plotting
+│
+├── artifacts/
+│   ├── 
+│   ├── test_model.py
+│   └── test_predict.py
+│
+├── requirements.txt        # All dependencies (TensorFlow, NumPy, etc.)
+├── README.md               # Project overview, usage, and results
+├── .gitignore
+└── LICENSE
+
 
 
 ---
 
-## ⚙️ Features
+## Features
 
 - **Data Handling**
   - Automatic MNIST download & preprocessing.
@@ -52,6 +73,7 @@ Includes a **Streamlit** web app with a drawing canvas and image upload support 
 ```bash
 git clone https://github.com/your-username/handwritten-digit-recognizer.git
 cd handwritten-digit-recognizer
+
 
 2️⃣ Create and activate virtual environment
 
