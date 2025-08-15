@@ -13,6 +13,7 @@ A complete pipeline for training, evaluating, and deploying a Convolutional Neur
 * [Streamlit App](#-streamlit-app)
 * [Requirements](#requirements)
 * [Example Results](#-example-results)
+* [Future Scope](#-future-scope)
 * [License](#-license)
 
 ---
@@ -164,6 +165,13 @@ streamlit-drawable-canvas>=0.8.0
 
 ---
 
-## 📜 License
+## Future Scope:
+* Extend to alphanumeric character recognition.
+* Integrate with mobile or web applications for real-world usage.
+* Experiment with more advanced architectures for even higher accuracy.
+* 
+---
+
+##  License
 
 MIT License – Free to use and modify.
